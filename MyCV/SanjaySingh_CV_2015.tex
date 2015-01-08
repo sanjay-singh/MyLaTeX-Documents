@@ -1,0 +1,227 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Sanjay}
+\familyname{Singh}
+%\title{Academic}               % optional, remove the line if not wanted
+\address{\#101, VARCHAS, MIT Campus, Manipal, India}{576104}    % optional, remove the line if not wanted
+\mobile{+91~(974)~073~0920}                     % optional, remove the line if not wanted
+\phone{+91~(820)~292~5363}                      % optional, remove the line if not wanted
+\fax{+91~(820)~257~1071}                        % optional, remove the line if not wanted
+\email{sanjay.singh@manipal.edu}                          % optional, remove the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{SS}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2005--2010}{PhD}{Manipal Institute of Technology}{Manipal}{}{Electronics and Communication Engineering}
+\cventry{2001--2003}{M.Tech}{Manipal Institute of Technology}{Manipal}{\textit{First Class}}{Electronics and Communication Engineering}
+\cventry{1996--2000}{AMIETE}{Institution of Electronics and Telecommunication Engineers}{New Delhi}{\textit{First Class}}{Electronics and Telecommunication}
+
+
+\section{Experience}
+\subsection{Teaching}
+\cventry{Nov 2010--Till Date}{Associate Professor}{Manipal Institute of Technology}{Manipal}{India}{Teaching and guiding research students in the Department of Information and Communication Technology}
+\cventry{Sep 2008--Nov 2010}{Senior Lecturer}{Manipal Institute of Technology}{Manipal}{India}{Taught undergraduates and post graduates in the Department of Information and Communication Technology}
+\cventry{Jan 2004--Sep 2008}{Lecturer}{Manipal Institute of Technology}{Manipal}{India}{Taught undergraduates and post graduates in the Department of Information and Communication Technology}
+\cventry{Aug 2003--Jan 2004}{Lecturer}{P.A College of Engineering}{Mangalore}{India}{Taught undergraduates in the Department of Electronics and Communication Engineering}
+
+
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\section{Area of Research and Teaching}
+\begin{itemize}
+\item Wireless Communication
+\item Signal Processing
+\item Information Theoretic Security
+\item Cryptography and Information Security
+\item Mathematical Logic
+\item Modeling and Verification of Software and Hardware Systems
+\item Artificial Intelligence and Machine Learning
+\end{itemize}
+
+\section{Languages}
+\cvitemwithcomment{Kannada}{ILR Level 1}{Elementary Proficiency}
+\cvitemwithcomment{Hindi}{ILR Level 5}{Native}
+\cvitemwithcomment{English}{ILR Level 4}{Full Professional Proficiency}
+
+
+\section{Computer Skills}
+\cvdoubleitem{Computational Tools}{MATLAB, OCTAVE, MAPLE, ORIGIN}{Statistical}{SSPS, R}
+\cvdoubleitem{Word Processing}{\LaTeX{}, Beamer, Tikz}{Languages}{\textit{Python, Prolog}}
+\cvdoubleitem{Operating System}{Windows}{Model Checking Tools}{NuSMV, Alloy, UPPAL, SPIN}
+
+\section{Interests}
+\cvitem{Music}{Listening to old Hindi songs}
+\cvitem{Games}{Tennis, Badminton and Chess}
+\cvitem{Reading}{Biographies of scientists and saints}
+
+\section{Professional Membership}
+\cvitem{IEEE}{Senior Member}%{The Institute of Electrical and Electronics Engineers}
+\cvitem{ACM}{Member}
+\cvitem{ISTE}{Life Member}%{Indian Society of Technical Education}
+\cvitem{SSI}{Life Member}%{System Society of India}
+\cvitem{IACSIT}{Senior Member}%{International Association of Computer Science and Information Technology}
+\cvitem{IAENG}{Member}%{International Association of Engineers}
+\cvitem{ASL}{Member}
+
+\section{Journal Reviewer}
+\begin{itemize}
+\item IEEE Transactions on Information Theory
+\item IEEE Transactions on Communications
+\item Wireless Personal Communications
+\item Journal of Software Evolution and Process
+\item Scientia Iranica- Transaction D
+\item	International Journal on Soft Computing, Artificial Intelligence and Applications
+\item	Signal and Image Processing: An International Journal
+\end{itemize}
+
+\section{Member Editorial Board}
+\begin{itemize}
+\item International Journal of Cryptography and Information Security
+\item International Journal of Chaos, Control, Modeling and Simulation
+\item American Journal of Signal Processing
+\item International Journal on AdHoc Networking Systems
+\item International Journal of Information Sciences and Techniques
+\end{itemize}
+
+\section{Member Technical Program Committee}
+\begin{itemize}
+\item IEEE International Conference on Signal Processing, Informatics, Communications and Energy Systems (IEEE SPICES 2015), Kozhikode, India
+\item International Bio-Metrics and Smart Government Summit (IBMSGS 2015), Sousse, Tunisia
+\item 2015 Asia Pacific Conference on Multimedia and Broadcasting (APMediaCast 2015), Bali, Indonesia
+\item 2015 International Conference on Computer, Communication and Control Technology (I4CT 2015), Kuching, Malaysia
+\item Fifth International Conference on Communication Systems and Network Technologies (CSNT 2015), Gwalior, India
+\item Fourth International Conference on Advances in Computing, Communication and Informatics (ICACCI 2015), Kochi, India
+\item Recent and Emerging Trends in Computer and Computational Sciences (RETCOM 2015), Bangalore, India
+\item The 3rd International Conference on Information and Communication Technology (ICoICT 2015), Bali, Indonesia
+\item 2014 IEEE International Symposium on Industrial Electronics Applications (ISIEA 2014), Kota Kinabalu, Malaysia
+\item 2014 IEEE International Conference on Communication, Networks and Satellite, Jakarta
+\item 2014 International Workshop on Mobile Applications (MobiApps), Barcelona, Spain
+\item The 2nd International Conference of Information and Communication Technology (ICoICT 2014), Indonesia
+\item Asia Pacific Conference on Wireless and Mobile Technologies 2014 (APWiMob), Bali
+\item 2014 IEEE Symposium on Computers and Informatics (ISCI 2014), Malaysia
+\item 2014 IEEE Symposium on Computer Applications \& Industrial Electronics (ISCAIE 2014), Penang, Malaysia
+\item 2014 IEEE Innovative Smart Grid Technologies - Asia (ISGT ASIA), Kaula Lumpur, Malaysia 
+\item  International Conference on Advanced Technologies for Communications (ATC'14), Vietnam
+\item International Conference on Advances in Computing, Communications and Informatics (ICACCI 2014), Greater Noida, India
+\item Third International Symposium on Pattern Recognition and Image Processing (PRIP - 2014), Greater Noida, India
+\item International Symposium on Bio-Inspired Computing (BioCom'14), India
+\item 2013 IEEE Conference on Clean Energy and Technology (CEAT 2013), Langkawi, Malaysia
+\item IEEE Symposium on Industrial Electronics and Applications (ISIEA 2013), Kuching, Malaysia 
+\item IEEE International RF and Microwave Conference (RFM 2013), Penang, Malaysia
+\item IEEE Symposium on Computers and Informatics (ISCI 2013), Malaysia
+\item IEEE Conference on Wireless Sensors (ICWISE 2013), Malaysia
+\item IEEE Symposium on Wireless Technology \& Applications (ISWTA 2013), Malaysia 
+\item IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE 2013), Indonesia
+\item Third International Conference on Advances in Computing and Communications (ACC-2013), Kerela, India 
+\item Second International Symposium on Pattern Recognition and Image Processing (PRIP 2013), Mysore, India
+\item International Conference on Communication Systems and Network Technologies (CSNT 2013), Gwalior, India
+\item The 19th Asia-Pacific Conference on Communications (APCC 2013), Indonesia
+\item The 2nd International Conference on Advances in Computing, Communication and Informatics (ICACCI 2013), Mysore, India
+\item	IEEE Asia-Pacific Conference on Applied Electromagnetics (APACE 2012), Malaysia
+\item	IEEE International Conference on Power and Energy (PECON 2012), Malaysia
+\item	IEEE Student Conference on Research and Development (SCOReD 2012), Malaysia
+\item	IEEE Symposium on Computer Applications and Industrial Electronics (ISCAIE 2012), Malaysia
+\item	IEEE Symposium on Industrial Electronics and Applications (ISIEA 2012), Indonesia
+\item	IEEE Symposium on Wireless Technology and Applications (ISWTA 2012), Indonesia
+\item	IEEE International Conference on Control System, Computing and Engineering (ICCSCE 2012), Malaysia
+\item International Workshop on Cryptography and Information Security (CRYPIS 2012), India
+\item	International Conference on Information Technology Convergence and Services (ITCS 2012), India
+\item	The 18th Asia-Pacific Conference on Communications  (APCC 2012), Korea
+\item IEEE Conference on Computer Application and Industrial Electronics (ICCAIE 2011)
+\end{itemize}
+
+
+\section{Invention Awards}
+During the year 2011 and 2012 I have received invention awards for the following work from \emph{Intellectual Ventures}, a US based company.
+\begin{itemize}
+\item Voice Based Addition of Contact Number in Real Time Mobile Conversation
+\item	Privacy Preserving and Ownership Authentication in Ubiquitous Computing Devices using Three Way Authentication
+\item	Dynamic Desktop and Aggregator
+\item	Ownership Authentication Transfer Protocol for Ubiquitous Computing Devices
+\end{itemize}
+
+\section{Patent}
+Patent has been filed for the following work:
+\begin{itemize}
+\item Technique for Candidates Selection for Bank Loans and Insurance Policies: A Tool for Bankers with Judgment Conflict Resolution and Reliability Assessment of Agreement 
+\item SAFE BUZZ: Achieving Adaptive Security through Situational Awareness in a Multi-Agent Swarm
+\end{itemize}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3}
+%
+%\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\newpage
+\nocite{*}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{unsrt}
+\bibliography{publicationsnew}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure{curriculum vit\ae{}}
+%\makelettertitle
+\end{document}
+
+
+%% end of file `template.tex'.
